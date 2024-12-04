@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"remota-web","appId":"1:781934594194:web:936e2c587b22f221687e4b","storageBucket":"remota-web.firebasestorage.app","apiKey":"AIzaSyBcY8z4xBrJZdNOmDpC785lsk-b77gsSlY","authDomain":"remota-web.firebaseapp.com","messagingSenderId":"781934594194"})), provideAuth(() => getAuth()), provideFirebaseApp(() => initializeApp({"projectId":"remota-web","appId":"1:781934594194:web:936e2c587b22f221687e4b","storageBucket":"remota-web.firebasestorage.app","apiKey":"AIzaSyBcY8z4xBrJZdNOmDpC785lsk-b77gsSlY","authDomain":"remota-web.firebaseapp.com","messagingSenderId":"781934594194"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
